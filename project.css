@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #000016;
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #3a6cf4; /* Solid blue background */
+    padding: 15px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s ease;
+  }
+  
+header .brand {
+  color: #fff;
+  font-size: 1.8em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+header .navigation a {
+  color: #fff;
+  margin-left: 30px;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+header .navigation a:hover {
+  color: #3a6cf4;
+}
+
+/* Section Title */
+.section-title {
+  position: relative;
+  color: #3a6cf4;
+  font-size: 2.2em;
+  font-weight: 800;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.section-title::before {
+  content: '';
+  position: absolute;
+  top: 56px;
+  left: 50%;
+  width: 140px;
+  height: 4px;
+  background: #3a6cf4;
+  transform: translateX(-50%);
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #3a6cf4;
+  transform: translateX(-50%);
+}
+
+/* Education Layout */
+#education {
+  padding: 100px 200px;
+}
+
+#education .content {
+  width: 100%;
+}
+
+#education .paragraph-text {
+  font-size: 1em;
+  line-height: 1.7em;
+  color: #ddd;
+}
+
+#education .btn {
+  display: inline-block;
+  margin-top: 30px;
+  background: #3a6cf4;
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 2px;
+  transition: 0.4s ease;
+}
+
+#education .btn:hover {
+  background: #235bf6;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #3a6cf4; /* Solid dark background */
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    z-index: 998;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Scroll to Top */
+.scrollToTop-btn {
+  z-index: 999;
+  position: fixed;
+  background: #3a6cf4;
+  color: #fff;
+  width: 45px;
+  height: 45px;
+  right: 0;
+  bottom: 10px;
+  font-size: 22px;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 3px;
+  cursor: pointer;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.scrollToTop-btn.active {
+  right: 20px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Reveal fix (optional override) */
+.reveal {
+  opacity: 1 !important;
+  transform: none !important;
+}
